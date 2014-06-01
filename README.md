@@ -14,7 +14,7 @@ The planes cannot land if the airport is full.
 - Weather
 
 ## How to use it
-First you have to require the files for the airport, the planes and the weather
+First you have to require the files for the airport and the planes
 
 `require './lib/airport'`
 
