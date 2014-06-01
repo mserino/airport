@@ -1,7 +1,6 @@
 Airport Challenge
 ==================
 Third week challenge for [Makers Academy](http://www.makersacademy.com)
-------------------
 
 Ruby code to control the flow of planes in an airport.
 The planes can take off and land in the airport, but only if there isn't any storm brewing.
