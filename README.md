@@ -20,8 +20,6 @@ First you have to require the files for the airport, the planes and the weather
 
 `require './lib/plane'`
 
-`require './lib/weather'`
-
 Then create the airport
 
 `airport_name = Airport.new`
@@ -38,6 +36,11 @@ You can land it into the airport:
 And the plane can take off from the airport:
 
 `airport_name.taking_off(plane_name)`
+
+Grand finale: all planes can take off from the airport:
+After creating five planes (this is the default capacity), and after having them landed in the airport, you can release them all:
+
+`airport_name.all_taking_off`
 
 ## Technologies
 - Ruby
