@@ -42,6 +42,10 @@ After creating five planes (this is the default capacity), and after having them
 
 `airport_name.all_taking_off`
 
+If you want to change the airport's capacity, after creating the airport, just type:
+
+`airport_name.capacity = 8`
+
 ## Technologies
 - Ruby
 - Rspec
