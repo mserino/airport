@@ -15,21 +15,21 @@ The planes cannot land if the airport is full.
 
 ## How to use it
 First you have to require the files for the airport, the planes and the weather
-> require './lib/airport'
-> require './lib/plane'
-> require './lib/weather'
+`require './lib/airport'`
+`require './lib/plane'`
+`require './lib/weather'`
 
 Then create the airport
-> airport_name = Airport.new
+`airport_name = Airport.new`
 and one or more planes
-> plane_name = Plane.new
+`plane_name = Plane.new`
 
 The plane's status when created is `flying`
 You can land it into the airport:
-> airport_name.landing(plane_name)
+`airport_name.landing(plane_name)`
 
 And the plane can take off from the airport:
-> airport_name.taking_off(plane_name)
+`airport_name.taking_off(plane_name)`
 
 ## Technologies
 - Ruby
