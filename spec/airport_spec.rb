@@ -67,4 +67,25 @@ describe Airport do
 
 	end
 
+	context "Grand finale" do
+
+		before(:each) do
+      allow(airport).to receive(:stormy?) { false }
+    end
+
+		it 'all planes can take off' do
+			5.times { airport.landing(Plane.new) }
+			airport.all_taking_off
+			expect(airport).not_to be_full
+		end	
+
+		# it 'all planes can land' do
+		# 	5.times {Plane.new}
+		# 	5.times { airport.landing(Plane.new) }
+		# 	5.times { airport.taking_off(Plane.new) }
+		# 	airport.all_land
+		# 	expect(airport).to be_full
+		# end
+	end
+
 end

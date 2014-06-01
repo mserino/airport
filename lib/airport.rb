@@ -11,10 +11,10 @@ class Airport
 	end
 
 	def landing(plane)
-		raise "The airport is full!" if self.full?
+		raise "The airport is full!" if full?
 		raise "The plane can\'t land in the middle of a storm!" if stormy?
-		plane.land!
 		planes << plane
+		plane.land!
 	end
 
 	def taking_off(plane)
@@ -30,5 +30,23 @@ class Airport
 	def full?
 		planes.count >= capacity
 	end
+
+	def empty?
+		planes.count == 0
+	end
+
+	def all_taking_off
+		until empty? do
+			planes.each {|plane| taking_off(plane)}
+		end
+		self
+	end
+
+	# def all_land
+	# 	until planes.count == DEFAULT_CAPACITY do
+	# 		planes.each {|plane| landing(plane)}
+	# 	end
+	# 	self
+	# end
 
 end
